@@ -4,6 +4,69 @@
   border-radius: 999px;
 }
 
+.window {
+  width: 100%;
+  height: 300px;
+  background: grey;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-animation: windowColor 10s infinite alternate;
+          animation: windowColor 10s infinite alternate;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.initials {
+  font-size: 32px;
+  margin: auto;
+  -webkit-transform-origin: y-axis center center;
+          transform-origin: y-axis center center;
+  -webkit-animation: spinInit 10s infinite;
+          animation: spinInit 10s infinite;
+}
+
+@-webkit-keyframes windowColor {
+  0% {
+    background: grey;
+  }
+  100% {
+    background: white;
+  }
+}
+
+@keyframes windowColor {
+  0% {
+    background: grey;
+  }
+  100% {
+    background: white;
+  }
+}
+
+@-webkit-keyframes spinInit {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg);
+            transform: rotateY(720deg);
+  }
+}
+
+@keyframes spinInit {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(720deg);
+            transform: rotateY(720deg);
+  }
+}
+
 h1 {
   padding: 2px 10px;
   font-weight: strong;
