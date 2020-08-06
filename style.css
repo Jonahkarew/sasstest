@@ -42,16 +42,18 @@ p {
 
 .panel, .little-panel, .big-panel {
   border: 3px solid dodgerblue;
-  background: lightgreen;
+  background: #eea571;
   margin: 10px;
 }
 
 .little-panel {
+  border-radius: 5px;
   font-size: 12px;
   padding: 5px;
 }
 
 .big-panel {
+  border-radius: 20px;
   font-size: 32px;
   padding: 20px;
 }
