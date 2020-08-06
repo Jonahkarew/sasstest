@@ -36,8 +36,8 @@ nav
         a:hover
             background-color: $hover-cover
 
-p
-    font-size: 32px
+// p
+//     font-size: 32px
 
 .panel
     border: 3px solid dodgerblue
@@ -52,6 +52,34 @@ p
 
 .big-panel
     @extend .panel
+    // how to use mixin
     @include border-radius(20px)
     font-size: 32px
     padding: 20px
+
+// operations section
+$buttonBackground: #006699
+$buttonColor: #ffffff
+$buttonPadding: 5px
+
+.button
+    background: $buttonBackground
+    border-radius: 8px
+    color: $buttonColor
+    display: inline-block
+    text-decoration: none
+    padding: $buttonPadding
+
+.button:hover
+    background: $buttonBackground * 1.5
+    
+.button:focus
+    background: $buttonBackground * 2
+
+.jumboButton
+    @extend .button
+    padding: $buttonPadding + 30
+
+.lightButton
+    @extend .button
+    background: $buttonBackground * 1.5

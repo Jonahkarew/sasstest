@@ -36,10 +36,6 @@ nav ul a:hover {
   background-color: #009900;
 }
 
-p {
-  font-size: 32px;
-}
-
 .panel, .little-panel, .big-panel {
   border: 3px solid dodgerblue;
   background: #eea571;
@@ -56,5 +52,30 @@ p {
   border-radius: 20px;
   font-size: 32px;
   padding: 20px;
+}
+
+.button, .jumboButton, .lightButton {
+  background: #006699;
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.button:hover, .jumboButton:hover, .lightButton:hover {
+  background: #0099e6;
+}
+
+.button:focus, .jumboButton:focus, .lightButton:focus {
+  background: #00ccff;
+}
+
+.jumboButton {
+  padding: 35px;
+}
+
+.lightButton {
+  background: #0099e6;
 }
 /*# sourceMappingURL=style.css.map */
