@@ -2,9 +2,19 @@ h1 {
   padding: 2px 10px;
   font-weight: strong;
   font-style: italic;
+  color: green;
 }
 
 h2 {
   margin: auto;
+  color: red;
+}
+
+body {
+  background-color: #2c3501;
+}
+
+nav ul {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
